@@ -1,10 +1,10 @@
 package com.github.rgmatute91.entity;
 
 public class Circle {
+	
 	private double radius;
-
-	public Circle() {
-	}
+	
+	public Circle() {}
 
 	public Circle(double radius) {
 		this.radius = radius;

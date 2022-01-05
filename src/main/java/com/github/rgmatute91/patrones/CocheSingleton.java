@@ -1,4 +1,4 @@
-package com.github.rgmatute91.service;
+package com.github.rgmatute91.patrones;
 
 public class CocheSingleton {
 	

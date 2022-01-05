@@ -1,6 +1,7 @@
 package com.github.rgmatute91.entity;
 
 public class Square {
+	
 	private double width;
 
 	public Square(double width) {
