@@ -3,14 +3,61 @@ package com.github.rgmatute91;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.github.rgmatute91.entity.Agujero;
+import com.github.rgmatute91.entity.Circle;
+import com.github.rgmatute91.entity.Square;
+import com.github.rgmatute91.entity.motor.Motor;
+import com.github.rgmatute91.entity.motor.MotorComun;
+import com.github.rgmatute91.entity.motor.MotorEconomico;
+import com.github.rgmatute91.entity.motor.MotorElectrico;
 import com.github.rgmatute91.patrones.CocheSingleton;
 import com.github.rgmatute91.patrones.CuboSingleton;
+import com.github.rgmatute91.patrones.FiguresAdapter;
+import com.github.rgmatute91.patrones.MotorElectricoAdapter;
 
 @SpringBootApplication
 public class HolaMundoApplication {
 
 	public static void main(String[] args) {
 		// SpringApplication.run(HolaMundoApplication.class, args);
+		
+		Motor motorComun = new MotorComun();
+		Motor motorEconomico = new MotorEconomico();
+		
+		Motor motorElectrico = new MotorElectricoAdapter();
+		motorElectrico.encender();
+		motorElectrico.acelerar();
+		motorElectrico.apagar();
+		
+		/*
+		Agujero ag = new Agujero(6);
+		Circle c = new Circle(4);
+		
+		if(ag.encajar(c)) {
+			System.out.println("Hola , si encaja el circulo");
+		}else {
+			System.out.println("Hola , No encaja el circulo en el agujero.");
+		}
+		
+		
+		Square sq1 = new Square(8);
+		Square sq2 = new Square(10);
+		
+		FiguresAdapter ad1 = new FiguresAdapter(sq1);
+		FiguresAdapter ad2 = new FiguresAdapter(sq2);
+		
+		if(ag.encajar(ad1)) {
+			System.out.println("Cuadrado de del 1er adaprador si encaja.");
+		}else {
+			System.out.println("Cuadrado de del 1er adaprador NO encaja.");
+		}
+		
+		if(ag.encajar(ad2)) {
+			System.out.println("Cuadrado de del 2do adaprador si encaja.");
+		}else {
+			System.out.println("Cuadrado de del 2do adaprador NO encaja.");
+		}
+		*/
 		
 		
 		/*
