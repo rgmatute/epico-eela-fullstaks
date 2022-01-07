@@ -1,8 +1,11 @@
 package com.github.rgmatute91.entity.lombok;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.NonNull;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class User {
 
 	private String usuario;
@@ -13,10 +16,10 @@ public class User {
 
 	private String contrasenia;
 
+	@NonNull
 	private String correo;
 
 	private String foto;
 	
 	
-
 }
