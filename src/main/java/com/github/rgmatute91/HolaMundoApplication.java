@@ -19,8 +19,9 @@ import com.github.rgmatute91.patrones.MotorElectricoAdapter;
 public class HolaMundoApplication {
 
 	public static void main(String[] args) {
-		// SpringApplication.run(HolaMundoApplication.class, args);
+		SpringApplication.run(HolaMundoApplication.class, args);
 		
+		/*
 		Motor motorComun = new MotorComun();
 		Motor motorEconomico = new MotorEconomico();
 		
@@ -28,6 +29,8 @@ public class HolaMundoApplication {
 		motorElectrico.encender();
 		motorElectrico.acelerar();
 		motorElectrico.apagar();
+		
+		*/
 		
 		/*
 		Agujero ag = new Agujero(6);
